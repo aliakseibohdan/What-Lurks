@@ -150,8 +150,10 @@ GameObject:
   - component: {fileID: 2215253974628249320}
   - component: {fileID: 9070206356168146358}
   - component: {fileID: 6433465044897373979}
-  - component: {fileID: 4196042837353391668}
   - component: {fileID: 397606536511797861}
+  - component: {fileID: 4196042837353391668}
+  - component: {fileID: 5703483244544526921}
+  - component: {fileID: 423974672293632208}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -265,6 +267,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9d0ee98afe93f7468174470cdbdb8b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &397606536511797861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5283927181947377568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4b0d6bc28b6bdc4f940f9ed86d35378, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4196042837353391668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,7 +293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   jumpHeight: 1
---- !u!114 &397606536511797861
+--- !u!114 &5703483244544526921
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -288,6 +302,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 5283927181947377568}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4b0d6bc28b6bdc4f940f9ed86d35378, type: 3}
+  m_Script: {fileID: 11500000, guid: e992c2097729375438dbf796765ad16e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionDistance: 3
+  interactableMask:
+    serializedVersion: 2
+    m_Bits: 65
+--- !u!114 &423974672293632208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5283927181947377568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3ffad0595e42e243977ad0b9948623a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptText: {fileID: 0}

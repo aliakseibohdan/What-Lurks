@@ -4,9 +4,10 @@ using UnityEngine.InputSystem;
 public class InputManager : MonoBehaviour
 {
     private PlayerInput playerInput;
-    private PlayerInput.PlayerActions playerActions;
     private PlayerMotor motor;
     private PlayerLook look;
+
+    public PlayerInput.PlayerActions playerActions;
 
     private void Awake()
     {

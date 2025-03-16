@@ -337,3 +337,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   frontHealthBar: {fileID: 0}
   backHealthBar: {fileID: 0}
+  overlay: {fileID: 0}
+  effectDuration: 2
+  fadeSpeed: 1.5

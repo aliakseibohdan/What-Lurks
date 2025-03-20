@@ -6,12 +6,15 @@ public class Enemy : MonoBehaviour
     private StateMachine stateMachine;
     private NavMeshAgent agent;
     private GameObject player;
+    private Vector3 playerLastKnownPosition;
     public NavMeshAgent Agent { get => agent; }
     public GameObject Player { get => player; }
+    public Vector3 PlayerLastKnownPosition { get => playerLastKnownPosition; set => playerLastKnownPosition = value; }
 
     [SerializeField] private string currentState;
 
     public WaypointsPath path;
+    public GameObject searchStateDebugSphere;
 
     [Header("Sight Values")]
     public float sightDistance = 20f;
@@ -37,6 +40,7 @@ public class Enemy : MonoBehaviour
     {
         CanSeePlayer();
         currentState = stateMachine.activeState.ToString();
+        searchStateDebugSphere.transform.position = playerLastKnownPosition;
     }
 
     public bool CanSeePlayer()

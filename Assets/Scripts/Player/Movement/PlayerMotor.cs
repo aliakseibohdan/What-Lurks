@@ -1,3 +1,4 @@
+using SmallHedge.SoundManager;
 using UnityEngine;
 
 public class PlayerMotor : MonoBehaviour
@@ -27,6 +28,8 @@ public class PlayerMotor : MonoBehaviour
         moveDirection.x = input.x;
         moveDirection.z = input.y;
         controller.Move(speed * Time.deltaTime * transform.TransformDirection(moveDirection));
+        if (moveDirection != Vector3.zero && isGrounded)
+            SoundManager.PlaySound(SoundType.FOOTSTEP, volume: 0.2f, delayTime: 0.3f);
         playerVelocity.y += gravity * Time.deltaTime;
         if (isGrounded && playerVelocity.y < 0)
             playerVelocity.y = -2f;

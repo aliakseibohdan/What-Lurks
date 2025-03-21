@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0558c539cdd44a4b8274322526d71dc, type: 3}
+  m_Name: Sounds SO
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: FOOTSTEP
+    volume: 1
+    mixer: {fileID: -8584062741355795011, guid: c9997f405e81d184fb0509c7d291ab28, type: 2}
+    sounds:
+    - {fileID: 8300000, guid: 2a8487eeb3eae4247800d3f5584a2f70, type: 3}
+    - {fileID: 8300000, guid: da58aff632455c343a28c25c7fbf4eb3, type: 3}
+    - {fileID: 8300000, guid: dbe8ff09235cdca43946e5e609a1c6e7, type: 3}
+    - {fileID: 8300000, guid: d7c359e0a3e8de34086207df8fa3ed64, type: 3}
+  - name: JUMP
+    volume: 1
+    mixer: {fileID: 0}
+    sounds: []
+  - name: LAND
+    volume: 1
+    mixer: {fileID: 0}
+    sounds: []
+  - name: HURT
+    volume: 1
+    mixer: {fileID: 0}
+    sounds: []
+  - name: SHOOT
+    volume: 1
+    mixer: {fileID: 0}
+    sounds: []
